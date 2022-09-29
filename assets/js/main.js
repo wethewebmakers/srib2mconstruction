@@ -205,6 +205,16 @@
 
 })()
 
+//whatsapp
+$(document).ready(function () {
+  $('#wa-widget').click(function() {
+      $('.wa-chat-box').css('display', 'block');
+  })
+  $('.wa-close').click(function() {
+      $('.wa-chat-box').css('display', 'none');
+  })
+})
+
 function sendMail() {
   user = document.getElementById('name').value;
   mobile = document.getElementById('mobile').value;
